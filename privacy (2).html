@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — GlowScan</title>
+<meta name="description" content="GlowScan privacy policy. How we handle your camera, photos, and data.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%230A0E0C' stroke='%235EFFC4' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0E0C;
+  --ink-soft:#111613;
+  --panel:#161D19;
+  --line:rgba(232,221,211,0.10);
+  --mint:#5EFFC4;
+  --mint-dim:#2E8C68;
+  --skin:#E8DDD3;
+  --skin-dim:#A89C8F;
+  --paper:#F2F0EC;
+  --display:'Space Grotesk',sans-serif;
+  --body:'Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--ink);color:var(--paper);font-family:var(--body);-webkit-font-smoothing:antialiased;}
+::selection{background:var(--mint);color:var(--ink);}
+
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:22px 5vw;border-bottom:1px solid var(--line);
+}
+.nav-mark{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-mark .dot{width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 12px var(--mint);}
+.nav-mark span{font-family:var(--display);font-weight:600;font-size:15px;color:var(--paper);}
+.nav-mark .accent{color:var(--mint);}
+.nav-back{
+  font-family:var(--mono);font-size:11px;text-transform:uppercase;
+  letter-spacing:0.05em;color:var(--skin-dim);text-decoration:none;
+  display:flex;align-items:center;gap:6px;transition:color 0.2s;
+}
+.nav-back:hover{color:var(--mint);}
+
+.page{max-width:720px;margin:0 auto;padding:80px 5vw 120px;}
+
+.page-tag{
+  font-family:var(--mono);font-size:11px;color:var(--mint);
+  text-transform:uppercase;letter-spacing:0.12em;
+  display:flex;align-items:center;gap:10px;margin-bottom:20px;
+}
+.page-tag::before{content:'';width:24px;height:1px;background:var(--mint);}
+
+h1{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(32px,5vw,52px);letter-spacing:-0.02em;
+  line-height:1.05;margin-bottom:16px;
+}
+
+.updated{
+  font-family:var(--mono);font-size:12px;color:var(--skin-dim);
+  margin-bottom:56px;padding-bottom:32px;border-bottom:1px solid var(--line);
+}
+
+.lead{
+  font-size:17px;line-height:1.7;color:var(--skin);
+  font-style:italic;margin-bottom:56px;
+  padding:28px 32px;background:var(--ink-soft);
+  border-left:2px solid var(--mint);border-radius:0 6px 6px 0;
+}
+
+.section{margin-bottom:52px;}
+.section h2{
+  font-family:var(--display);font-weight:600;font-size:22px;
+  letter-spacing:-0.01em;margin-bottom:16px;color:var(--paper);
+  display:flex;align-items:center;gap:12px;
+}
+.section h2 .sec-num{
+  font-family:var(--mono);font-size:11px;color:var(--mint-dim);
+  font-weight:400;letter-spacing:0.05em;
+}
+.section p{
+  font-size:15.5px;line-height:1.75;color:var(--skin-dim);margin-bottom:14px;
+}
+.section p:last-child{margin-bottom:0;}
+.section p b{color:var(--paper);font-weight:600;}
+.section ul{
+  list-style:none;padding:0;margin:0;
+}
+.section ul li{
+  font-size:15.5px;line-height:1.75;color:var(--skin-dim);
+  padding:10px 0 10px 20px;border-bottom:1px solid var(--line);
+  position:relative;
+}
+.section ul li:last-child{border-bottom:none;}
+.section ul li::before{
+  content:'→';position:absolute;left:0;color:var(--mint-dim);font-size:12px;
+  top:12px;
+}
+
+.callout{
+  background:var(--ink-soft);border:1px solid var(--line);
+  border-radius:6px;padding:24px 28px;margin:24px 0;
+}
+.callout p{font-size:14.5px;color:var(--skin-dim);line-height:1.7;margin:0;}
+.callout p b{color:var(--paper);}
+
+.contact-box{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:8px;padding:32px;margin-top:56px;text-align:center;
+}
+.contact-box h3{
+  font-family:var(--display);font-weight:600;font-size:20px;
+  margin-bottom:10px;
+}
+.contact-box p{font-size:14px;color:var(--skin-dim);line-height:1.6;margin-bottom:20px;}
+.contact-box a{
+  font-family:var(--mono);font-size:12px;color:var(--mint);
+  text-decoration:none;border-bottom:1px solid var(--mint-dim);
+  padding-bottom:2px;
+}
+
+footer{
+  border-top:1px solid var(--line);padding:32px 5vw;
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--mono);font-size:11px;color:var(--skin-dim);flex-wrap:wrap;gap:12px;
+}
+footer a{color:var(--skin-dim);text-decoration:none;transition:color 0.2s;}
+footer a:hover{color:var(--mint);}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-mark" href="/">
+    <div class="dot"></div>
+    <span>GLOW<span class="accent">SCAN</span></span>
+  </a>
+  <a class="nav-back" href="/">← Back to home</a>
+</nav>
+
+<main class="page">
+  <div class="page-tag">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: June 2026 &nbsp;·&nbsp; Effective immediately</p>
+
+  <div class="lead">
+    GlowScan is built on a single principle: your face is yours. We capture it, analyze it instantly, and discard it. We do not store, sell, or share your photos or your skin data — ever.
+  </div>
+
+  <div class="section">
+    <h2><span class="sec-num">01</span> Who we are</h2>
+    <p>GlowScan is an independent Android application developed by <b>Realcoder-1</b>. The app is available at <b>glowscan-bice.vercel.app</b> and distributed via the Google Play Store and direct APK download from GitHub.</p>
+    <p>This policy explains what data we collect, why, and what happens to it. If you have any questions, contact us at the address at the bottom of this page.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="sec-num">02</span> Camera and photos</h2>
+    <p>GlowScan requests access to your device camera for one purpose only: to capture a single photo of your face for skin analysis.</p>
+    <ul>
+      <li><b>Your photo is never saved to your device gallery</b> by GlowScan.</li>
+      <li><b>Your photo is never uploaded to our servers</b> — we have no servers that store images.</li>
+      <li>The photo is converted to a compressed format in memory, sent directly to the Gemini API for analysis, and discarded immediately after a response is received.</li>
+      <li>The entire process happens in a single session. Closing the app clears all image data from memory.</li>
+    </ul>
+    <div class="callout">
+      <p><b>In plain terms:</b> we take a photo, ask an AI what it sees, show you the answer, and throw the photo away. No copy of your face is retained anywhere after your session ends.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="sec-num">03</span> Gemini API (Google)</h2>
+    <p>The skin analysis is powered by <b>Google's Gemini API</b>. When you initiate a scan, your compressed photo is transmitted to Google's Gemini API endpoint over an encrypted HTTPS connection.</p>
+    <ul>
+      <li>Google processes the image to generate the skin analysis text returned to you.</li>
+      <li>Google's handling of this data is governed by the <a href="https://ai.google.dev/terms" target="_blank" style="color:var(--mint);text-decoration:none;border-bottom:1px solid var(--mint-dim);">Google Generative AI Terms of Service</a> and <a href="https://policies.google.com/privacy" target="_blank" style="color:var(--mint);text-decoration:none;border-bottom:1px solid var(--mint-dim);">Google Privacy Policy</a>.</li>
+      <li>GlowScan does not control Google's data retention policies for API calls. We recommend reviewing Google's API data usage terms if this concerns you.</li>
+      <li>No other third-party services receive your image or analysis data.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="sec-num">04</span> Data we do not collect</h2>
+    <p>To be explicit, GlowScan does <b>not</b> collect, store, or transmit any of the following:</p>
+    <ul>
+      <li>Your name, email address, or any account information — there is no account system</li>
+      <li>Your location or GPS data</li>
+      <li>Your device's contacts, calendar, or files</li>
+      <li>Any biometric identifiers beyond the transient in-session photo</li>
+      <li>Browsing history or behavior across other apps</li>
+      <li>Any analytics or crash reporting data beyond what Android provides by default</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="sec-num">05</span> Data we do collect</h2>
+    <p>GlowScan collects minimal, non-personal technical data to ensure the app functions correctly:</p>
+    <ul>
+      <li><b>Device type and Android version</b> — used only for compatibility purposes, not stored on our servers</li>
+      <li><b>App crash logs</b> — if the app crashes, Android may generate a local crash report. We do not actively receive or collect these unless you choose to submit feedback via the Play Store</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="sec-num">06</span> Children's privacy</h2>
+    <p>GlowScan is intended for users <b>aged 18 and older</b>. We do not knowingly collect any data from children under 13. If you believe a child has used this app and submitted a photo, please contact us immediately so we can ensure no data was retained by any third-party service.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="sec-num">07</span> Medical disclaimer</h2>
+    <p>GlowScan is a <b>skincare guidance tool, not a medical device</b>. The analysis provided is generated by an AI model and is for informational and cosmetic purposes only. It does not constitute medical advice, diagnosis, or treatment.</p>
+    <p>Do not use GlowScan as a substitute for professional dermatological advice. If you have concerns about a skin condition, consult a qualified healthcare provider.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="sec-num">08</span> Your rights</h2>
+    <p>Since we do not store any personal data on our systems, there is nothing to access, correct, or delete on our end. If you are concerned about data Google may hold from Gemini API calls, you can review and exercise your rights via <a href="https://myaccount.google.com" target="_blank" style="color:var(--mint);text-decoration:none;border-bottom:1px solid var(--mint-dim);">Google Account settings</a>.</p>
+    <p>You may revoke GlowScan's camera permission at any time via your Android device settings under <b>Apps → GlowScan → Permissions</b>. Revoking camera access disables the scan feature entirely.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="sec-num">09</span> Changes to this policy</h2>
+    <p>If we make material changes to this privacy policy, we will update the "Last updated" date at the top of this page and, where appropriate, notify users via a Play Store update note. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Questions about privacy?</h3>
+    <p>If you have any questions, concerns, or requests regarding this privacy policy or how GlowScan handles your data, reach out via GitHub.</p>
+    <a href="https://github.com/Realcoder-1/glowscan/issues" target="_blank">Open an issue on GitHub →</a>
+  </div>
+</main>
+
+<footer>
+  <span>© 2026 GlowScan</span>
+  <a href="/">← Back to home</a>
+</footer>
+
+</body>
+</html>
